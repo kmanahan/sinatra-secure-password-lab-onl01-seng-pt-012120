@@ -23,7 +23,6 @@ class ApplicationController < Sinatra::Base
     else 
       redirect "failure" 
     end
-
   end
 
   get '/account' do
@@ -37,7 +36,7 @@ class ApplicationController < Sinatra::Base
   end
 
   post "/login" do
-    ##your code here
+    user = User.find_by()
   end
 
   get "/failure" do
